@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-Star Deals - Coupon Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        /* Default layout - Opening styles */
+        article {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60%;
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-content: flex-start;
+        }
+
+        aside {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 400px;
+            background-color: #ffd700;
+            padding: 20px;
+            border: 3px solid #ff6600;
+            min-height: 300px;
+        }
+
+        aside p {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .coupon {
+            background-color: #e6f3ff;
+            border: 2px solid #0066cc;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            flex: 1 1 200px;
+            min-width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .couponPlus {
+            background-color: #ffe6e6;
+            border: 2px solid #cc0066;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            flex: 1 1 200px;
+            min-width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .coupon p, .couponPlus p {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .coupon img, .couponPlus img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin: 2px;
+            border-radius: 4px;
+        }
+
+        /* Media Query for screens 1000px and below */
+        @media screen and (max-width: 1000px) {
+            article {
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                position: static;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        /* Media Query for screens 1001px and above */
+        @media screen and (min-width: 1001px) {
+            article {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: calc(100% - 420px);
+                right: 420px;
+            }
+
+            aside {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <article>
+            <div class="coupon">
+                <p>$1 off - produce purchase of $5</p>
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=120&h=120&fit=crop" alt="produce" />
+            </div>
+            
+            <div class="couponPlus">
+                <p>BOGO - all Vitamins and Health Supplements</p>
+                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=120&h=120&fit=crop" alt="vitamins" />
+            </div>
+            
+            <div class="coupon" style="flex: 0 0 220px;">
+                <p>$1 off - 3 Haagen-Daz ice-creams (1 pint)</p>
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=120&h=120&fit=crop" alt="ice-cream" />
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=120&h=120&fit=crop" alt="ice-cream" />
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=120&h=120&fit=crop" alt="ice-cream" />
+            </div>
+            
+            <div class="couponPlus">
+                <p>L'Oréal Shampoo - Buy 2 get 1 free</p>
+                <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=120&h=120&fit=crop" alt="shampoo" />
+            </div>
+            
+            <div class="coupon">
+                <p>Boar's Head Ham - 10% off</p>
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=120&h=120&fit=crop" alt="ham" />
+            </div>
+            
+            <div class="coupon" style="flex: 0 0 250px;">
+                <p>Specialty Breads - Buy 3, get 3 free</p>
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=120&h=120&fit=crop" alt="bread" />
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=120&h=120&fit=crop" alt="bread" />
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=120&h=120&fit=crop" alt="bread" />
+            </div>
+            
+            <div class="coupon">
+                <p>10 1 liter sodas - 2 for 1</p>
+                <img src="https://images.unsplash.com/photo-1622543925917-763c34c1a086?w=120&h=120&fit=crop" alt="soda" /> &nbsp;X 10
+            </div>
+            
+            <div class="coupon">
+                <p>Cat & Dog Food - 20% off</p>
+                <img src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?w=120&h=120&fit=crop" alt="cat and dog food" />
+            </div>
+        </article>
+
+        <aside>
+            <p>February is coupon month at ★ All-Star Deals, your store for saving money.</p>
+            
+            <p>Use the markup and CSS supplied to build a replica of the page shown. You must use what you have been given, and only what you have been given.</p>
+            
+            <p>Open this web page on your phone and show the cashier this golden box, and all the coupons you want to use on your shopping trip.</p>
+        </aside>
+    </div>
+</body>
+</html>
